@@ -1,0 +1,228 @@
+/* Styles generaux */
+body{
+    font-family: 'century Gothic', Calibri, serif;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+hr{
+    width: 200px;
+    margin: 20px auto 100px;
+}
+
+header{
+    height: 100px;
+}
+
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 2px solid #AAA;
+    background-color: #aaa;
+}
+footer p{
+    text-align: center;
+}
+
+/* Menu */
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.table{
+    display: table;
+    margin: 0 auto;
+}
+
+/* Styles Specifiques a chaque onglet de notre menu */
+
+.menu-ind:hover, .presentation{
+    border-top: 5px solid #4C8;
+    background-color: RGBa(64, 200, 130, 0.15);
+}
+
+.menu-exp:hover, .parcours{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+
+.menu-hob:hover, .competences{
+    border-top: 5px solid #0070BB;
+    background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.menu-con:hover, .recommandation{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+/* Accueil */
+
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sec{
+    margin: 0px 10%;
+}
+
+.lefts{
+    width: 45%;
+    float: left;
+    /* background-color: darkslateblue; */
+    position: relative;
+    /* height: 550px; */
+}
+.rights{
+    width: 50%;
+    float: right;
+    /* background-color: darkslateblue; */
+    position: relative;
+    margin-left: 5%;
+}
+
+.lefts img{
+    position: relative;
+    /* top: 58%; */
+    /* left: 18%; */
+    width: 100%;
+    height: 550px;
+    background-color: darkgray;
+    border-top-right-radius: 0;
+    
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    float: right;
+    width: 70%;
+} 
+
+.cleft, .cright, .sousleft, .sousright{
+    width: 50%;
+    float: left;
+}
+
+.sec::after, .exp::after, .reco::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* experieces-pro.html */
+
+.orange{
+    border-top: 5px solid #e47d26;
+    background-color: RGBa(228, 117, 38, 0.15);
+    margin-bottom: 0px;
+}
+
+.rose{
+    border-top: 5px solid #e44d96;
+    background-color: RGBa(228, 77, 128, 0.15);
+    margin-bottom: 0px;
+}
+
+.leftexp{
+    width: 45%;
+    float: left;
+}
+
+.rightexp{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+/* .leftexp img{
+    width: 100%;
+    max-width: 400px;
+} */
+
+/* hobbies.html */
+
+.vert, .langue{
+    border-top: 5px solid #5f6;
+    background-color: RGBa(70, 240, 80, 0.15);
+}
+
+.bleu{
+    border-top: 5px solid #29c;
+    background-color: RGBa(30, 152, 212, 0.15);
+}
+
+.jaune{
+    border-top: 5px solid #f3e241;
+    background-color: RGBa(240, 255, 69, 0.15);
+}
+
+/* contact.html */
+
+.rouge{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+/* Resposivite des ecrans */
+@media screen and (max-width: 780px) {
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px; 
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+ 
+}
